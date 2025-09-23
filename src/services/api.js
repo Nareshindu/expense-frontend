@@ -1,7 +1,16 @@
+// import axios from "axios";
+
+// const API = axios.create({
+//   baseURL: "http://3.80.85.71:8080/api", // Backend URL
+// });
+
+// export default API;
+
+
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080/api", // Backend URL
+  baseURL: "/api", // relative → Nginx will proxy
 });
 
 export default API;
